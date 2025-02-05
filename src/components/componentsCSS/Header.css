@@ -1,0 +1,30 @@
+.header {
+    background-color: #FFFFFF;    
+    padding-top: 24px;
+}
+
+#headerSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+
+    padding-bottom: 24px;
+}
+
+.gradient-header-bottom {
+    height: 5px;
+    background-image: linear-gradient(to bottom, rgb(231, 222, 222), white);
+}
+
+.logo {
+    width: 60px;
+    height: 75px;
+}
+
+.title {
+    display: flex;
+    align-items: end;
+    font-weight: 400;
+    font-size: 50px;
+}

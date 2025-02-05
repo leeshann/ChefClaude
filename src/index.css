@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #FAFAF8;
+  margin-bottom: 40px
+}
