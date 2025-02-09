@@ -4,6 +4,8 @@ import Recipe from '/src/components/Recipe.jsx'
 import GenerateRecipe  from '/src/components/GenerateRecipe.jsx'
 import IngredientList from '/src/components/IngredientList.jsx'
 import { getRecipeFromMistral  } from '/src/ai.js'
+import { useRef } from 'react'
+import { useEffect } from 'react'
 
 export default function Form() {
 
@@ -20,6 +22,19 @@ export default function Form() {
         const recipeFromMistral = await getRecipeFromMistral(ingredients)
         setRecipe(recipeFromMistral)
     }
+
+    // const recipeSection = useRef(null)
+
+    useEffect(() => {
+        // if (recipe.length != 0) {
+        //     recipeSection.current.scrollIntoView({
+        //         behavior: "smooth",
+        //         block: "nearest",
+        //         inline: "nearest"
+        //     })
+        // }
+        setIngredients([])
+    },[recipe])
 
     return (
         <>
